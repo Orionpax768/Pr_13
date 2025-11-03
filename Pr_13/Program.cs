@@ -17,7 +17,7 @@ class Program
         int lastnumber = num % 10;
         return ReverseNumber(num / 10, result * 10 + lastnumber);
     }
-    static void Main()
+    static void Main(string[] args)
     {
         while (true)
         {
