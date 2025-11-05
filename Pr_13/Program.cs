@@ -36,6 +36,11 @@ namespace Pr_13
                     {
                         throw new Exception("Число(a) не может(могут) быть пустым!");
                     }
+                 
+                    if (input.Length > 1 && input.StartsWith("0"))
+                    {
+                        throw new Exception("Число не может начинаться с нуля!");
+                    }
                     if (!int.TryParse(input, out int number))
                     {
                         throw new Exception("Введите целое число!");
